@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19593" started-at="2016-03-12T21:09:56Z" finished-at="2016-03-12T21:10:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19593" started-at="2016-03-12T21:09:56Z" finished-at="2016-03-12T21:10:16Z">
+      <class name="ru.greg3d.yandexRuCalcTest">
+        <test-method status="PASS" signature="SuiteSetup()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="SuiteSetup" is-config="true" duration-ms="6698" started-at="2016-03-13T00:09:56Z" finished-at="2016-03-13T00:10:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuiteSetup -->
+        <test-method status="PASS" signature="openCalcPageTest()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="openCalcPageTest" is-config="true" duration-ms="2165" started-at="2016-03-13T00:10:03Z" finished-at="2016-03-13T00:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCalcPageTest -->
+        <test-method status="PASS" signature="presets()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="presets" is-config="true" duration-ms="798" started-at="2016-03-13T00:10:05Z" finished-at="2016-03-13T00:10:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presets -->
+        <test-method status="PASS" signature="testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel, java.lang.String)[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="testCalc_inputArgsByClickButtons" duration-ms="1103" started-at="2016-03-13T00:10:06Z" data-provider="buttonsClicksSequenceTestDataProvider" finished-at="2016-03-13T00:10:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ru.greg3d.CalcModel@1bcf236]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalc_inputArgsByClickButtons -->
+        <test-method status="PASS" signature="presets()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="presets" is-config="true" duration-ms="280" started-at="2016-03-13T00:10:07Z" finished-at="2016-03-13T00:10:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presets -->
+        <test-method status="PASS" signature="testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel, java.lang.String)[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="testCalc_inputArgsByClickButtons" duration-ms="1447" started-at="2016-03-13T00:10:07Z" data-provider="buttonsClicksSequenceTestDataProvider" finished-at="2016-03-13T00:10:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ru.greg3d.CalcModel@1f26e72]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalc_inputArgsByClickButtons -->
+        <test-method status="PASS" signature="presets()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="presets" is-config="true" duration-ms="395" started-at="2016-03-13T00:10:09Z" finished-at="2016-03-13T00:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presets -->
+        <test-method status="PASS" signature="testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel, java.lang.String)[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="testCalc_inputArgsByClickButtons" duration-ms="1630" started-at="2016-03-13T00:10:09Z" data-provider="buttonsClicksSequenceTestDataProvider" finished-at="2016-03-13T00:10:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ru.greg3d.CalcModel@9d6f02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalc_inputArgsByClickButtons -->
+        <test-method status="PASS" signature="presets()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="presets" is-config="true" duration-ms="327" started-at="2016-03-13T00:10:11Z" finished-at="2016-03-13T00:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presets -->
+        <test-method status="PASS" signature="testCalc_inputArgsByCopyPast(java.lang.String, java.lang.String)[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="testCalc_inputArgsByCopyPast" duration-ms="1132" started-at="2016-03-13T00:10:11Z" data-provider="inputArgsByCopyPastDataProvider" finished-at="2016-03-13T00:10:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sqrt(144)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ошибка]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalc_inputArgsByCopyPast -->
+        <test-method status="PASS" signature="presets()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="presets" is-config="true" duration-ms="298" started-at="2016-03-13T00:10:12Z" finished-at="2016-03-13T00:10:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presets -->
+        <test-method status="PASS" signature="testCalc_inputArgsByCopyPast(java.lang.String, java.lang.String)[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="testCalc_inputArgsByCopyPast" duration-ms="556" started-at="2016-03-13T00:10:12Z" data-provider="inputArgsByCopyPastDataProvider" finished-at="2016-03-13T00:10:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cos(Pi/2)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ошибка]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalc_inputArgsByCopyPast -->
+        <test-method status="PASS" signature="presets()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="presets" is-config="true" duration-ms="267" started-at="2016-03-13T00:10:13Z" finished-at="2016-03-13T00:10:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presets -->
+        <test-method status="PASS" signature="testCalc_inputArgsByCopyPast(java.lang.String, java.lang.String)[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="testCalc_inputArgsByCopyPast" duration-ms="476" started-at="2016-03-13T00:10:13Z" data-provider="inputArgsByCopyPastDataProvider" finished-at="2016-03-13T00:10:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,5 * 100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalc_inputArgsByCopyPast -->
+        <test-method status="PASS" signature="presets()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="presets" is-config="true" duration-ms="351" started-at="2016-03-13T00:10:14Z" finished-at="2016-03-13T00:10:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presets -->
+        <test-method status="PASS" signature="testCalc_inputArgsByTypingText(java.lang.String, java.lang.String)[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="testCalc_inputArgsByTypingText" duration-ms="596" started-at="2016-03-13T00:10:14Z" data-provider="typingTextSequenceTestDataProvider" finished-at="2016-03-13T00:10:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cp/2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalc_inputArgsByTypingText -->
+        <test-method status="PASS" signature="presets()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="presets" is-config="true" duration-ms="280" started-at="2016-03-13T00:10:15Z" finished-at="2016-03-13T00:10:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presets -->
+        <test-method status="PASS" signature="testCalc_inputArgsByTypingText(java.lang.String, java.lang.String)[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="testCalc_inputArgsByTypingText" duration-ms="482" started-at="2016-03-13T00:10:15Z" data-provider="typingTextSequenceTestDataProvider" finished-at="2016-03-13T00:10:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,5*100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalc_inputArgsByTypingText -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.greg3d.yandexRuCalcTest@194d659]" name="tearDown" is-config="true" duration-ms="281" started-at="2016-03-13T00:10:15Z" finished-at="2016-03-13T00:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ru.greg3d.yandexRuCalcTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

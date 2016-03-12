@@ -38,17 +38,17 @@ public class ApplicationManager implements IApplicationManager {
 		getNavigationHelper().openMainPage();
 	}
 
-	@Override
+	//@Override
 	public INavigationHelper getNavigationHelper() {
 		return navHelper;
 	}
 
-	@Override
+	//@Override
 	public IYandexRuHelper getYandexRuHelper() {
 		return yandexRuHelper;
 	}
 
-	@Override
+	//@Override
 	public IYandexRuCalcHelper getYandexRuCalcHelpe() {
 		return yandexRuCalcHelper;
 	}
@@ -61,7 +61,7 @@ public class ApplicationManager implements IApplicationManager {
 		return baseUrl;
 	}
 
-	@Override
+	//@Override
 	public void stop() {
 		if (driver != null) {
 			driver.quit();

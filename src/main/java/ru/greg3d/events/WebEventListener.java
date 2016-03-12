@@ -4,21 +4,14 @@
  */
 package ru.greg3d.events;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Calendar;
 import java.util.Optional;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import ru.greg3d.util.LogUtils;
 import ru.greg3d.util.WaitUtils;
 
 public class WebEventListener extends AbstractWebDriverEventListener {

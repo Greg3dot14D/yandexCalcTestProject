@@ -8,7 +8,6 @@ public class YandexRuHelper extends DriverBasedHelper implements IYandexRuHelper
 		super(manager.getWebDriver());
 	}
 	
-	@Override
 	public void searchText(String text){
 		pages.yandexRuPage.arrow.inputText(text).clickSearchButton();
 	}

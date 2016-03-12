@@ -1,11 +1,16 @@
 package ru.greg3d.applogic.interfaces;
 
+import ru.greg3d.CalcModel;
+
 public interface IYandexRuCalcHelper {
-	String getCalcResultByInputStringArg(String inputArg);
+
+	void setTumblerToRad();
 	void setTumblerToGrad();
 	void clearResult();
 	boolean isYandexRuCalcPageLoaded();
-	String getMultiplyOf(String arg1, String arg2);
-	String getCosOf(String arg);
-	String getSqrtOf(String arg);
+
+	String getResultByCopyPastArgs(String args);	
+	String getResultByClickButtons(CalcModel args);
+	String getResultByTypingText(String args);
+	boolean errorMessageIsDisplayed();
 }

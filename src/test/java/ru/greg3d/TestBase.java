@@ -32,13 +32,10 @@ public class TestBase {
 	
 	@BeforeTest
 	public void SuiteSetup() {
-		//app = new ApplicationManager1("JIAYU G4S");
-		//app = new ApplicationManager1("android_browser");
-		//app = new ApplicationManager1("android_chrome");
-		//app = new ApplicationManager1("firefox");
-		app = new ApplicationManager("chrome");
-		//app = new ApplicationManager1("fake");
-		//Assert.ignore("Skip");
+		//app = new ApplicationManager("android_chrome");
+		app = new ApplicationManager("firefox");
+		//app = new ApplicationManager("chrome");
+		//app = new ApplicationManager("fake");
 	}	
 	
 	//@AfterSuite(alwaysRun = true)
@@ -49,7 +46,7 @@ public class TestBase {
 	
 	public static class LogListener implements IInvokedMethodListener{
 
-		@Override
+		//@Override
 		public void afterInvocation(IInvokedMethod m, ITestResult res) {
 //			LOG.info("<<< @Test " + m.getTestMethod().getMethodName());
 			
@@ -68,7 +65,7 @@ public class TestBase {
 			}
 		}
 
-		@Override
+		//@Override
 		public void beforeInvocation(IInvokedMethod m, ITestResult res) {
 			LOG.info(">>> @Test " + m.getTestMethod().getMethodName());
 		}

@@ -6,6 +6,7 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<dependencies>
+		<!--
 		<dependency>
 			<groupId>ru.greg3d</groupId>
 			<artifactId>sqljdbc42</artifactId>
@@ -13,6 +14,7 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/sqljdbc42.jar</systemPath>
 		</dependency>
+		-->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>

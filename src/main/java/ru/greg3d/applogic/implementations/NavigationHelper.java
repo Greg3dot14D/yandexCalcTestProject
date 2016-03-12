@@ -12,18 +12,14 @@ public class NavigationHelper extends DriverBasedHelper implements INavigationHe
 		this.baseUrl = manager.getBaseUrl();
 	}
 
-	@Override
 	public void openMainPage() {
 		driver.get(baseUrl);
 	}
 
-	
-	@Override
 	public void openUrl(String url){
 		driver.get(url);
 	}
 	
-	@Override
 	public void openRelativeUrl(String url) {
 		driver.get(baseUrl + url);
 	}
