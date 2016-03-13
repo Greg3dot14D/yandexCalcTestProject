@@ -4,8 +4,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import ru.greg3d.TestBase;
-
 public class CapabilitiesLoader {
 
 	protected static Logger LOG = LoggerFactory.getLogger(CapabilitiesLoader.class);

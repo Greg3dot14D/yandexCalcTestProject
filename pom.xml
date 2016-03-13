@@ -36,12 +36,6 @@
 			<version>20160212</version>
 		</dependency>
 		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>1.10.19</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.38</version>
@@ -110,9 +104,9 @@
 	<!-- profiles -->
 	<profiles>
 		<profile>
-			<id>remote_firefox</id>
+			<id>local_firefox</id>
 			<properties>
-				<env>remote_firefox</env>
+				<env>local_firefox</env>
 				<user.username>root</user.username>
 				<user.password></user.password>
 				<grid2.hub></grid2.hub>
@@ -124,9 +118,9 @@
 			</activation>
 		</profile>
 		<profile>
-			<id>firefox</id>
+			<id>remote_firefox</id>
 			<properties>
-				<env>firefox</env>
+				<env>remote_firefox</env>
 				<user.username></user.username>
 				<user.password></user.password>
 				<grid2.hub>http://192.168.1.84:4444/wd/hub</grid2.hub>

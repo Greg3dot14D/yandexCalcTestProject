@@ -9,6 +9,8 @@ public class YandexRuHelper extends DriverBasedHelper implements IYandexRuHelper
 	}
 	
 	public void searchText(String text){
-		pages.yandexRuPage.arrow.inputText(text).clickSearchButton();
+		pages.yandexRuPage.arrow
+			.inputText(text)
+			.clickSearchButton();
 	}
 }

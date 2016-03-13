@@ -1,9 +1,7 @@
 package ru.greg3d.applogic.implementations;
 
-import ru.greg3d.CalcModel;
 import ru.greg3d.applogic.interfaces.IYandexRuCalcHelper;
-import ru.greg3d.util.Fields;
-import ru.yandex.qatools.htmlelements.element.Button;
+import ru.greg3d.model.calc.CalcModel;
 
 public class YandexRuCalcHelper extends DriverBasedHelper implements
 		IYandexRuCalcHelper {
@@ -30,24 +28,28 @@ public class YandexRuCalcHelper extends DriverBasedHelper implements
 	}
 
 	public boolean errorMessageIsDisplayed() {
-		return pages.yandexRuCalcPage.calc.errorMessage.isDisplayed();
+		return pages.yandexRuCalcPage.calc.errorMessageIsDisplayed();
 	}
 
 	public String getResultByCopyPastArgs(String args) {
 		return pages.yandexRuCalcPage.setTextInputByCopyPast(args).calc
-				.clickResult().getResultText();
+				.clickResult()
+				.getResultText();
 	}
 
 	public String getResultByClickButtons(CalcModel model) {
-		for (String buttonName : model.getClicksSequenceList()) {
-			((Button) Fields.getFieldByAnnotationName(
-					pages.yandexRuCalcPage.calc, buttonName)).click();
+		for (String annotationName : model.getClicksSequenceList()) {
+			pages.yandexRuCalcPage.clickCalcButtonByAnnotationName(annotationName);
 		}
-		return pages.yandexRuCalcPage.calc.clickResult().getResultText();
+		return pages.yandexRuCalcPage.calc
+				.clickResult()
+				.getResultText();
 	}
 
 	public String getResultByTypingText(String args) {
-		return pages.yandexRuCalcPage.calc.setTextInput(args).clickResult()
+		return pages.yandexRuCalcPage.calc
+				.sendKeysToTextInput(args)
+				.clickResult()
 				.getResultText();
 	}
 

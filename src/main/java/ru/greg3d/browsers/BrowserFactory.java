@@ -44,7 +44,7 @@ public class BrowserFactory {
 	}
 
 	private static void afterCreateBrowserSetup(WebDriver driver, DesiredCapabilities cap) {
-		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 
 		try {
 			if (cap.getCapability("platformName").toString().toLowerCase().equals("android"))
@@ -62,7 +62,7 @@ public class BrowserFactory {
 			driver.manage().window().maximize();
 	}
 
-	// Слизано у Баранцева, настроки считываются из файла
+	// Слизано у Баранцева, настройки считываются из файла
 	// "application.properties" или из POM
 	public static WebDriver init(DesiredCapabilities capabilities){
 		WebDriver driver = null;

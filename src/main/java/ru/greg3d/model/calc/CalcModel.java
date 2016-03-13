@@ -1,4 +1,4 @@
-package ru.greg3d;
+package ru.greg3d.model.calc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -82,7 +82,7 @@ public class CalcModel {
 		return this;
 	}
 	
-	public String getClicksSequence(){
+	public String getClicksSequenceText(){
 		return clicksSequence.toString();
 	}
 	

@@ -9,6 +9,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitUtils {
 
+	private static long WAIT_START_AJAX_IN_MILLISECONDS = 100;
+	private static long WAIT_FINISH_AJAX_IN_SECONDS = 5;
+	
+	public static void setWaitStartAjaxInMilliseconds(long delay){
+		WAIT_START_AJAX_IN_MILLISECONDS = delay;
+	}
+	
+	public static void setWaitFinishAjaxInSeconds(long delay){
+		WAIT_FINISH_AJAX_IN_SECONDS = delay;
+	}
+	
 	public static WebElement waitElementIsClickable(WebDriver driver, WebElement element, Integer waitTimeInSeconds) {
 	    if (waitTimeInSeconds == null) {
 	    	waitTimeInSeconds = 10;
@@ -20,7 +31,7 @@ public class WaitUtils {
 		// Дожидаемся состояния страницы $.active = 0
 		//
 	public static boolean WaitPageIsActive(WebDriver driver){
-    	WebDriverWait wait = new WebDriverWait(driver, 5000);
+    	WebDriverWait wait = new WebDriverWait(driver, WAIT_FINISH_AJAX_IN_SECONDS * 1000);
     	try{
     	wait.until(new ExpectedCondition<Boolean>(){
             public Boolean apply(WebDriver d) {
@@ -39,7 +50,7 @@ public class WaitUtils {
 		// Дожидаемся состояния страницы $.active = 1
 		//
 	public static boolean WaitPageIsNotActive(WebDriver driver){
-    	WebDriverWait wait = new WebDriverWait(driver, 5/100, 100);
+    	WebDriverWait wait = new WebDriverWait(driver, 5/100, WAIT_START_AJAX_IN_MILLISECONDS);
 
     	try{
     	wait.until(new ExpectedCondition<Boolean>(){

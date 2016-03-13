@@ -11,11 +11,11 @@ public class Tumbler extends HtmlElement{
 	@FindBy(css=".tumbler__input.tumbler__input_side_right")
 	private HtmlElement right;
 	
-	public boolean isRadSelected(){
+	public boolean isLeftSelected(){
 		return left.isSelected();
 	}
 	
-	public boolean isGradSelected(){
+	public boolean isRightSelected(){
 		return right.isSelected();
 	}
 

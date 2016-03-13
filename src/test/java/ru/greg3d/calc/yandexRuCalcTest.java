@@ -1,10 +1,12 @@
-package ru.greg3d;
+package ru.greg3d.calc;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import ru.greg3d.model.calc.CalcModel;
 
 public class yandexRuCalcTest extends TestBase {
 
@@ -22,40 +24,46 @@ public class yandexRuCalcTest extends TestBase {
 		Assert.assertTrue(app.getYandexRuCalcHelpe().isYandexRuCalcPageLoaded());
 	}
 
-	// проверка при вводе данных путем копипаста
-	@Test(dataProvider = "inputArgsByCopyPastDataProvider")
-	public void testCalc_inputArgsByCopyPast(String args,
+	// проверка при вводе невалидных данных путем копипаста
+	@Test(dataProvider = "inputArgsByCopyPastInValidDataProvider")
+	public void testCalc_inputArgsByCopyPast_testInValidData(String args,
 			String expectedResult) {
-		// Проверяем ввод невалидной последовательности символов
-		if (expectedResult.equals(errorMessage)) {
-			Assert.assertEquals(app.getYandexRuCalcHelpe()
-					.getResultByCopyPastArgs(args), args);
-			Assert.assertTrue(app.getYandexRuCalcHelpe()
+		app.getYandexRuCalcHelpe().getResultByCopyPastArgs(args);	
+		Assert.assertTrue(app.getYandexRuCalcHelpe()
 					.errorMessageIsDisplayed());
-		}
-		// Проверяем ввод валидной последовательности символов
-		else
-			Assert.assertEquals(app.getYandexRuCalcHelpe()
-					.getResultByCopyPastArgs(args), expectedResult);
 	}
 
 	@DataProvider
-	private Object[][] inputArgsByCopyPastDataProvider() {
+	private Object[][] inputArgsByCopyPastInValidDataProvider() {
 		return new Object[][] {
 				{ "sqrt(144)", errorMessage },
-				{ "cos(Pi/2)", errorMessage },
+				{ "cos(Pi/2)", errorMessage }
+			};
+	};
+	
+	// проверка при вводе валидных данных путем копипаста
+	@Test(dataProvider = "inputArgsByCopyPastValidDataProvider")
+	public void testCalc_inputArgsByCopyPast_testValidData(String args,
+			String expectedResult) {
+			Assert.assertEquals(app.getYandexRuCalcHelpe()
+					.getResultByCopyPastArgs(args), expectedResult);
+	}
+	
+	@DataProvider
+	private Object[][] inputArgsByCopyPastValidDataProvider() {
+		return new Object[][] {
 				{ "1,5 * 100", "150" }
 			};
 	};
 
 	// проверка при вводе данных путем набора текста с клавиатуры
-	@Test(dataProvider = "typingTextSequenceTestDataProvider")
-	public void testCalc_inputArgsByTypingText(String args, String result) {
+	@Test(dataProvider = "inputArgsByTypingTextDataProvider")
+	public void testCalc_inputArgsByTypingText_testValidData(String args, String result) {
 		Assert.assertEquals(app.getYandexRuCalcHelpe().getResultByTypingText(args), result);
 	}
 
 	@DataProvider
-	private Object[][] typingTextSequenceTestDataProvider() {
+	private Object[][] inputArgsByTypingTextDataProvider() {
 		return new Object[][] {
 					{ "cp/2", "0" },
 					{ "1,5*100", "150" },
@@ -63,17 +71,17 @@ public class yandexRuCalcTest extends TestBase {
 	};
 
 	// проверка при вводе данных путем нажатия кнопок калькулятора
-	@Test(dataProvider = "buttonsClicksSequenceTestDataProvider")
-	public void testCalc_inputArgsByClickButtons(CalcModel clicksSequence,
+	@Test(dataProvider = "inputArgsByClickButtonsDataProvider")
+	public void testCalc_inputArgsByClickButtons_testValidData(CalcModel clicksSequence,
 			String result) {
 		Assert.assertEquals(
 				app.getYandexRuCalcHelpe().getResultByClickButtons(
 						clicksSequence), result,
-				clicksSequence.getClicksSequence());
+				"Sequence of clicks :" + clicksSequence.getClicksSequenceText());
 	}
 
 	@DataProvider
-	private Object[][] buttonsClicksSequenceTestDataProvider() {
+	private Object[][] inputArgsByClickButtonsDataProvider() {
 		return new Object[][] {
 				{
 					CalcModel.newSequence()

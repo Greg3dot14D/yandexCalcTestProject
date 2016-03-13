@@ -3,7 +3,20 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="ru.greg3d.yandexRuCalcTest"/>
+      <class name="ru.greg3d.calc.yandexRuCalcTest"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="ru.greg3d.calc.yandexRuCalcTest">
+        <methods>
+          <include name="testCalc_inputArgsByClickButtons_testValidData" invocation-numbers="2"/>
+          <include name="openCalcPageTest"/>
+          <include name="presets"/>
+          <include name="tearDown"/>
+          <include name="SuiteSetup"/>
+        </methods>
+      </class> <!-- ru.greg3d.calc.yandexRuCalcTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

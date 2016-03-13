@@ -1,4 +1,4 @@
-package ru.greg3d;
+package ru.greg3d.calc;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,9 +12,6 @@ import org.testng.annotations.Parameters;
 
 import ru.greg3d.applogic.implementations.*;
 import ru.greg3d.applogic.interfaces.*;
-import ru.greg3d.asserts.Assert;
-
-//import com.microsoft.sqlserver.jdbc.*;
 
 @Listeners({TestBase.LogListener.class})
 public class TestBase {
@@ -46,7 +43,7 @@ public class TestBase {
 	
 	public static class LogListener implements IInvokedMethodListener{
 
-		//@Override
+		@Override
 		public void afterInvocation(IInvokedMethod m, ITestResult res) {
 //			LOG.info("<<< @Test " + m.getTestMethod().getMethodName());
 			
@@ -65,7 +62,7 @@ public class TestBase {
 			}
 		}
 
-		//@Override
+		@Override
 		public void beforeInvocation(IInvokedMethod m, ITestResult res) {
 			LOG.info(">>> @Test " + m.getTestMethod().getMethodName());
 		}

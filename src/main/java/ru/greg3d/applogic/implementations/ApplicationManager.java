@@ -8,7 +8,6 @@ import ru.greg3d.applogic.interfaces.IYandexRuCalcHelper;
 import ru.greg3d.applogic.interfaces.IYandexRuHelper;
 import ru.greg3d.browsers.BrowserDriver;
 import ru.greg3d.browsers.TracingWebDriver;
-import ru.greg3d.factory.fake.fakeDriver;
 import ru.greg3d.util.*;
 
 public class ApplicationManager implements IApplicationManager {
@@ -26,11 +25,9 @@ public class ApplicationManager implements IApplicationManager {
 
 	public ApplicationManager(String capabilitiesName) {
 		this.baseUrl = PropertyLoader.loadProperty("site.url");
-		if (capabilitiesName.equals("fake"))
-			driver = fakeDriver.getDriver();
-		else
-			driver = new TracingWebDriver(
-					BrowserDriver.getEventFiringWebDriver(BrowserDriver.newDriver(capabilitiesName)));
+		driver = new TracingWebDriver(
+					//BrowserDriver.getEventFiringWebDriver(BrowserDriver.newDriver(capabilitiesName)));
+				BrowserDriver.newDriver(capabilitiesName));
 		navHelper = new NavigationHelper(this);
 		yandexRuHelper = new YandexRuHelper(this);
 		yandexRuCalcHelper = new YandexRuCalcHelper(this);
@@ -38,17 +35,17 @@ public class ApplicationManager implements IApplicationManager {
 		getNavigationHelper().openMainPage();
 	}
 
-	//@Override
+	@Override
 	public INavigationHelper getNavigationHelper() {
 		return navHelper;
 	}
 
-	//@Override
+	@Override
 	public IYandexRuHelper getYandexRuHelper() {
 		return yandexRuHelper;
 	}
 
-	//@Override
+	@Override
 	public IYandexRuCalcHelper getYandexRuCalcHelpe() {
 		return yandexRuCalcHelper;
 	}
@@ -61,7 +58,7 @@ public class ApplicationManager implements IApplicationManager {
 		return baseUrl;
 	}
 
-	//@Override
+	@Override
 	public void stop() {
 		if (driver != null) {
 			driver.quit();

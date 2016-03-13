@@ -1,6 +1,6 @@
 package ru.greg3d.applogic.interfaces;
 
-import ru.greg3d.CalcModel;
+import ru.greg3d.model.calc.CalcModel;
 
 public interface IYandexRuCalcHelper {
 

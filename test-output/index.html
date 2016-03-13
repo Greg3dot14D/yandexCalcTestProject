@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.calc.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@1f26e72, _150)">testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@1f26e72, _150)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,42 +116,37 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1bcf236, 12)">testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1bcf236, 12)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.calc.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@bac7bc, 0)">testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@bac7bc, 0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1f26e72, 0)">testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1f26e72, 0)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.calc.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@7776ab, 12)">testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@7776ab, 12)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@9d6f02, 150)">testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@9d6f02, 150)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.calc.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByCopyPast_testInValidData(cos(Pi/2), Ошибка)">testCalc_inputArgsByCopyPast_testInValidData(cos(Pi/2), Ошибка)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByCopyPast(1,5 * 100, 150)">testCalc_inputArgsByCopyPast(1,5 * 100, 150)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.calc.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByCopyPast_testInValidData(sqrt(144), Ошибка)">testCalc_inputArgsByCopyPast_testInValidData(sqrt(144), Ошибка)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByCopyPast(sqrt(144), Ошибка)">testCalc_inputArgsByCopyPast(sqrt(144), Ошибка)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.calc.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByCopyPast_testValidData(1,5 * 100, 150)">testCalc_inputArgsByCopyPast_testValidData(1,5 * 100, 150)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByCopyPast(cos(Pi/2), Ошибка)">testCalc_inputArgsByCopyPast(cos(Pi/2), Ошибка)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.calc.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByTypingText_testValidData(1,5*100, 150)">testCalc_inputArgsByTypingText_testValidData(1,5*100, 150)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByTypingText(1,5*100, 150)">testCalc_inputArgsByTypingText(1,5*100, 150)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByTypingText(cp/2, 0)">testCalc_inputArgsByTypingText(cp/2, 0)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="ru.greg3d.calc.yandexRuCalcTest" hash-for-method="testCalc_inputArgsByTypingText_testValidData(cp/2, 0)">testCalc_inputArgsByTypingText_testValidData(cp/2, 0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -152,73 +161,114 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">ru.greg3d.yandexRuCalcTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">ru.greg3d.calc.yandexRuCalcTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1bcf236, 12)">
-                  </a> <!-- testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1bcf236, 12) -->
-                  <span class="method-name">testCalc_inputArgsByClickButtons</span>
-                  <span class="parameters">(ru.greg3d.CalcModel@1bcf236, 12)</span>
+                  <a name="testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@1f26e72, _150)">
+                  </a> <!-- testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@1f26e72, _150) -->
+                  <span class="method-name">testCalc_inputArgsByClickButtons_testValidData</span>
+                  <span class="parameters">(ru.greg3d.model.calc.CalcModel@1f26e72, _150)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Sequence of clicks :click(&apos;1&apos;)-&gt;click(&apos;,&apos;)-&gt;click(&apos;5&apos;)-&gt;click(&apos;×&apos;)-&gt;click(&apos;1&apos;)-&gt;click(&apos;0&apos;)-&gt;click(&apos;0&apos;)-&gt; expected [_150] but found [150]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at ru.greg3d.calc.yandexRuCalcTest.testCalc_inputArgsByClickButtons_testValidData(yandexRuCalcTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ru.greg3d.calc.yandexRuCalcTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@bac7bc, 0)">
+                  </a> <!-- testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@bac7bc, 0) -->
+                  <span class="method-name">testCalc_inputArgsByClickButtons_testValidData</span>
+                  <span class="parameters">(ru.greg3d.model.calc.CalcModel@bac7bc, 0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1f26e72, 0)">
-                  </a> <!-- testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1f26e72, 0) -->
-                  <span class="method-name">testCalc_inputArgsByClickButtons</span>
-                  <span class="parameters">(ru.greg3d.CalcModel@1f26e72, 0)</span>
+                  <a name="testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@7776ab, 12)">
+                  </a> <!-- testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@7776ab, 12) -->
+                  <span class="method-name">testCalc_inputArgsByClickButtons_testValidData</span>
+                  <span class="parameters">(ru.greg3d.model.calc.CalcModel@7776ab, 12)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@9d6f02, 150)">
-                  </a> <!-- testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@9d6f02, 150) -->
-                  <span class="method-name">testCalc_inputArgsByClickButtons</span>
-                  <span class="parameters">(ru.greg3d.CalcModel@9d6f02, 150)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCalc_inputArgsByCopyPast(1,5 * 100, 150)">
-                  </a> <!-- testCalc_inputArgsByCopyPast(1,5 * 100, 150) -->
-                  <span class="method-name">testCalc_inputArgsByCopyPast</span>
-                  <span class="parameters">(1,5 * 100, 150)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCalc_inputArgsByCopyPast(sqrt(144), Ошибка)">
-                  </a> <!-- testCalc_inputArgsByCopyPast(sqrt(144), Ошибка) -->
-                  <span class="method-name">testCalc_inputArgsByCopyPast</span>
-                  <span class="parameters">(sqrt(144), Ошибка)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCalc_inputArgsByCopyPast(cos(Pi/2), Ошибка)">
-                  </a> <!-- testCalc_inputArgsByCopyPast(cos(Pi/2), Ошибка) -->
-                  <span class="method-name">testCalc_inputArgsByCopyPast</span>
+                  <a name="testCalc_inputArgsByCopyPast_testInValidData(cos(Pi/2), Ошибка)">
+                  </a> <!-- testCalc_inputArgsByCopyPast_testInValidData(cos(Pi/2), Ошибка) -->
+                  <span class="method-name">testCalc_inputArgsByCopyPast_testInValidData</span>
                   <span class="parameters">(cos(Pi/2), Ошибка)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testCalc_inputArgsByTypingText(1,5*100, 150)">
-                  </a> <!-- testCalc_inputArgsByTypingText(1,5*100, 150) -->
-                  <span class="method-name">testCalc_inputArgsByTypingText</span>
+                  <a name="testCalc_inputArgsByCopyPast_testInValidData(sqrt(144), Ошибка)">
+                  </a> <!-- testCalc_inputArgsByCopyPast_testInValidData(sqrt(144), Ошибка) -->
+                  <span class="method-name">testCalc_inputArgsByCopyPast_testInValidData</span>
+                  <span class="parameters">(sqrt(144), Ошибка)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalc_inputArgsByCopyPast_testValidData(1,5 * 100, 150)">
+                  </a> <!-- testCalc_inputArgsByCopyPast_testValidData(1,5 * 100, 150) -->
+                  <span class="method-name">testCalc_inputArgsByCopyPast_testValidData</span>
+                  <span class="parameters">(1,5 * 100, 150)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalc_inputArgsByTypingText_testValidData(1,5*100, 150)">
+                  </a> <!-- testCalc_inputArgsByTypingText_testValidData(1,5*100, 150) -->
+                  <span class="method-name">testCalc_inputArgsByTypingText_testValidData</span>
                   <span class="parameters">(1,5*100, 150)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testCalc_inputArgsByTypingText(cp/2, 0)">
-                  </a> <!-- testCalc_inputArgsByTypingText(cp/2, 0) -->
-                  <span class="method-name">testCalc_inputArgsByTypingText</span>
+                  <a name="testCalc_inputArgsByTypingText_testValidData(cp/2, 0)">
+                  </a> <!-- testCalc_inputArgsByTypingText_testValidData(cp/2, 0) -->
+                  <span class="method-name">testCalc_inputArgsByTypingText_testValidData</span>
                   <span class="parameters">(cp/2, 0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -227,7 +277,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--1453889155/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--119209498/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -236,7 +286,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;ru.greg3d.yandexRuCalcTest&quot;/&gt;
+      &lt;class name=&quot;ru.greg3d.calc.yandexRuCalcTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -278,42 +328,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCalc_inputArgsByClickButtons')
-data.setCell(0, 2, 'ru.greg3d.yandexRuCalcTest')
-data.setCell(0, 3, 1630);
+data.setCell(0, 1, 'testCalc_inputArgsByCopyPast_testInValidData')
+data.setCell(0, 2, 'ru.greg3d.calc.yandexRuCalcTest')
+data.setCell(0, 3, 1485);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCalc_inputArgsByClickButtons')
-data.setCell(1, 2, 'ru.greg3d.yandexRuCalcTest')
-data.setCell(1, 3, 1447);
+data.setCell(1, 1, 'testCalc_inputArgsByClickButtons_testValidData')
+data.setCell(1, 2, 'ru.greg3d.calc.yandexRuCalcTest')
+data.setCell(1, 3, 1345);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCalc_inputArgsByCopyPast')
-data.setCell(2, 2, 'ru.greg3d.yandexRuCalcTest')
-data.setCell(2, 3, 1132);
+data.setCell(2, 1, 'testCalc_inputArgsByClickButtons_testValidData')
+data.setCell(2, 2, 'ru.greg3d.calc.yandexRuCalcTest')
+data.setCell(2, 3, 963);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCalc_inputArgsByClickButtons')
-data.setCell(3, 2, 'ru.greg3d.yandexRuCalcTest')
-data.setCell(3, 3, 1103);
+data.setCell(3, 1, 'testCalc_inputArgsByClickButtons_testValidData')
+data.setCell(3, 2, 'ru.greg3d.calc.yandexRuCalcTest')
+data.setCell(3, 3, 935);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCalc_inputArgsByTypingText')
-data.setCell(4, 2, 'ru.greg3d.yandexRuCalcTest')
-data.setCell(4, 3, 596);
+data.setCell(4, 1, 'testCalc_inputArgsByCopyPast_testInValidData')
+data.setCell(4, 2, 'ru.greg3d.calc.yandexRuCalcTest')
+data.setCell(4, 3, 487);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testCalc_inputArgsByCopyPast')
-data.setCell(5, 2, 'ru.greg3d.yandexRuCalcTest')
-data.setCell(5, 3, 556);
+data.setCell(5, 1, 'testCalc_inputArgsByTypingText_testValidData')
+data.setCell(5, 2, 'ru.greg3d.calc.yandexRuCalcTest')
+data.setCell(5, 3, 423);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testCalc_inputArgsByTypingText')
-data.setCell(6, 2, 'ru.greg3d.yandexRuCalcTest')
-data.setCell(6, 3, 482);
+data.setCell(6, 1, 'testCalc_inputArgsByTypingText_testValidData')
+data.setCell(6, 2, 'ru.greg3d.calc.yandexRuCalcTest')
+data.setCell(6, 3, 407);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testCalc_inputArgsByCopyPast')
-data.setCell(7, 2, 'ru.greg3d.yandexRuCalcTest')
-data.setCell(7, 3, 476);
+data.setCell(7, 1, 'testCalc_inputArgsByCopyPast_testValidData')
+data.setCell(7, 2, 'ru.greg3d.calc.yandexRuCalcTest')
+data.setCell(7, 3, 382);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -339,82 +389,84 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ru.greg3d.yandexRuCalcTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ru.greg3d.calc.yandexRuCalcTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">SuiteSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">openCalcPageTest</span>
-                <span class="method-start">6704 ms</span>
+                <span class="method-start">6961 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">presets</span>
-                <span class="method-start">8874 ms</span>
+                <span class="method-start">9117 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1bcf236, 12)</span>
-                <span class="method-start">9672 ms</span>
+                <span class="method-name">testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@7776ab, 12)</span>
+                <span class="method-start">9619 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">presets</span>
-                <span class="method-start">10776 ms</span>
+                <span class="method-start">10583 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@1f26e72, 0)</span>
-                <span class="method-start">11056 ms</span>
+                <span class="method-name">testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@bac7bc, 0)</span>
+                <span class="method-start">10821 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">presets</span>
-                <span class="method-start">12504 ms</span>
+                <span class="method-start">11756 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCalc_inputArgsByClickButtons(ru.greg3d.CalcModel@9d6f02, 150)</span>
-                <span class="method-start">12899 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCalc_inputArgsByClickButtons_testValidData(ru.greg3d.model.calc.CalcModel@1f26e72, _150)</span>
+                <span class="method-start">12222 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">presets</span>
-                <span class="method-start">14531 ms</span>
+                <span class="method-start">13570 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCalc_inputArgsByCopyPast(sqrt(144), Ошибка)</span>
-                <span class="method-start">14858 ms</span>
+                <span class="method-name">testCalc_inputArgsByCopyPast_testInValidData(sqrt(144), Ошибка)</span>
+                <span class="method-start">13823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">presets</span>
-                <span class="method-start">15991 ms</span>
+                <span class="method-start">15309 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCalc_inputArgsByCopyPast(cos(Pi/2), Ошибка)</span>
-                <span class="method-start">16289 ms</span>
+                <span class="method-name">testCalc_inputArgsByCopyPast_testInValidData(cos(Pi/2), Ошибка)</span>
+                <span class="method-start">15541 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">presets</span>
-                <span class="method-start">16845 ms</span>
+                <span class="method-start">16029 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCalc_inputArgsByCopyPast(1,5 * 100, 150)</span>
-                <span class="method-start">17112 ms</span>
+                <span class="method-name">testCalc_inputArgsByCopyPast_testValidData(1,5 * 100, 150)</span>
+                <span class="method-start">16282 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">presets</span>
-                <span class="method-start">17589 ms</span>
+                <span class="method-start">16665 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCalc_inputArgsByTypingText(cp/2, 0)</span>
-                <span class="method-start">17940 ms</span>
+                <span class="method-name">testCalc_inputArgsByTypingText_testValidData(cp/2, 0)</span>
+                <span class="method-start">16901 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">presets</span>
-                <span class="method-start">18537 ms</span>
+                <span class="method-start">17325 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testCalc_inputArgsByTypingText(1,5*100, 150)</span>
-                <span class="method-start">18817 ms</span>
+                <span class="method-name">testCalc_inputArgsByTypingText_testValidData(1,5*100, 150)</span>
+                <span class="method-start">17588 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19301 ms</span>
+                <span class="method-start">17997 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
